@@ -1,0 +1,14 @@
+Calculadora de velocidade média.
+<br><hr><br>
+<meta charset = "UTF-8">
+<script>
+//Entrada de dados:
+let dis = prompt("Digite a distância do percurso(Em quilômetros): ");
+dis = Number(dis);
+let temp = prompt("Digite o tempo do percurso(Em horas): ");
+temp = Number(temp);
+//Processamento de dados: 
+let vm = dis/temp;
+//Saída de dados: 
+alert("A velocidade média do veículo é: " + vm + "Km/h!");
+</script>
