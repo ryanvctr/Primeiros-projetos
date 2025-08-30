@@ -1,0 +1,25 @@
+<script>
+//Entrada de dados:
+let av1 = prompt("Digite a primeira nota: ");
+let av2 = prompt("Digite a segunda nota: ");
+//Processamento de dados:
+av1 = Number(av1);
+av2 = Number(av2);
+let media = (av1 + av2)/2;
+//Saída de dados:
+if (media >= 7){
+    alert("A sua média é: " + Math.round(media) + ".  Você está Aprovado! Boas Férias");
+}
+else {
+    alert("A sua média é: " + Math.round(media) + ". Você está de Recuperação!");
+    let av3 = prompt("Digite a nota da sua recuperação: ");
+    av3 = Number(av3);
+    let media2 = (media + av3)/2;
+    if (media2 >= 7){
+        alert("Sua média final foi: " + Math.round(media2) + ". Parabéns! Curta suas Férias.");
+    }
+    else {
+        alert("Sua média final foi: " + Math.round(media2) + ". Você está Reprovado!");
+    }
+}
+</script>
